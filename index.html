@@ -5,400 +5,271 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Bite - Food Delivery App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/images/img__1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <!-- Navigation -->
-            <div class="navigation">
-                <img src="assets/images/img_fast_bite_white040306_2.png" alt="Fast Bite Logo" class="logo">
-                <div class="nav-item nav-about">
-                    <span class="nav-text">About</span>
+     <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- <a href="#" class="logo">FastBite</a> -->
+            <img src="/assets/images/img_fast_bite_white040306_2.png" alt="FastBite Logo" class="logo" style="width: 200px;">
+            <div class="nav-links">
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">Support</a>
+                <a href="#" class="download-btn">Download</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content animate-on-scroll">
+                <h1>FAST BITE</h1>
+                <p class="subtitle">Discover and order the best food delivery from thousands of local restaurants. From craving to comfort in minutes.</p>
+            </div>
+            <div class="hero-phones">
+                <!-- <div class="phone-mockup float-animation">
+                    <div class="phone-screen">
+                        <div class="app-header">FastBite</div>
+                        <div class="app-content">
+                            <div class="food-icon">🍕</div>
+                            <div class="app-text">Order Now</div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="phone-screen">
+                    <div class="app-header">Track Order</div>
+                    <div class="app-content">
+                        <div class="food-icon">🚚</div>
+                        <div class="app-text">On the way</div>
+                    </div>
+                </div> -->
+                <div class="float-animation" style="animation-delay: 1s;">
+                    <img src="/assets/images/img_kiff_app_screenshot_400x312.png" alt="" style="height: 400px; width: 400px;" />
                 </div>
-                <div class="nav-item nav-awareness">
-                    <span class="nav-text">Awareness</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Your Next Meal is Just 4 Steps Away</h2>
+                <p class="section-subtitle">FastBite makes food ordering simple and fast</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card card-1 animate-on-scroll">
+                    <div class="card-icon">🔍</div>
+                    <div class="card-number">1</div>
+                    <h3 class="card-title">Discover & Choose</h3>
+                    <p class="card-description">Browse through thousands of restaurants and find your perfect meal from our extensive selection.</p>
                 </div>
-                <div class="nav-item nav-support">
-                    <span class="nav-text">Support</span>
+                <div class="feature-card card-2 animate-on-scroll">
+                    <div class="card-icon">🛒</div>
+                    <div class="card-number">2</div>
+                    <h3 class="card-title">Place Your Order</h3>
+                    <p class="card-description">Add items to cart and checkout with just a few clicks. Fast and secure payment process.</p>
                 </div>
-                <div class="nav-item nav-download">
-                    <span class="nav-text">Download</span>
+                <div class="feature-card card-3 animate-on-scroll">
+                    <div class="card-icon">📍</div>
+                    <div class="card-number">3</div>
+                    <h3 class="card-title">Track in Real-Time</h3>
+                    <p class="card-description">Monitor your order from kitchen to your doorstep with live tracking updates.</p>
+                </div>
+                <div class="feature-card card-4 animate-on-scroll">
+                    <div class="card-icon">
+                        <img src="/assets/images/img__4.png" alt="" style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="card-number">4</div>
+                    <h3 class="card-title">Enjoy</h3>
+                    <p class="card-description">Receive your hot, fresh meal and enjoy the perfect dining experience at home.</p>
                 </div>
             </div>
-
-            <!-- Hero Content -->
-            <h1 class="hero-title fade-in-up">FAST</h1>
-            <h1 class="hero-subtitle fade-in-up">BITE</h1>
-            <img src="assets/images/img_kiff_app_screenshot.png" alt="Fast Bite App Screenshot" class="hero-phone-left pulse">
-            <img src="assets/images/img_kiff_app_screenshot_400x312.png" alt="Fast Bite App Screenshot" class="hero-phone-right pulse">
-            <p class="hero-description fade-in-up">Discover and order the best food delivery from thousands of local restaurants. From craving to comfort in minutes.</p>
         </div>
+    </section>
 
-        <!-- Feature Cards Section -->
-        <div class="feature-card card-1 fade-in-up">
-            <img src="assets/images/img_.png" alt="Discover Icon" class="card-icon">
-            <h3 class="card-title">Discover & Choose</h3>
-            <p class="card-subtitle">From awesome Vendors</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #a0dcbb;">x</span>
-                <span class="card-number-text" style="color: #a0dcbb;">1</span>
+    <!-- Food Tracking Section -->
+    <section class="tracking-section">
+        <div class="container">
+            <div class="tracking-grid">
+                <div class="tracking-content animate-on-scroll">
+                    <h2>Expiration dates under control.</h2>
+                    <p>If your food has an expiration date, FastBite will keep it under control so you can eat it before it's too late. Never waste food again with our smart tracking system.</p>
+                </div>
+                <div class="tracking-cards">
+                    <div class="tracking-card fresh animate-on-scroll">
+                        <div class="food-item">
+                            <div class="food-emoji">🥛</div>
+                            <div class="food-info">
+                                <h4>Milk</h4>
+                                <div class="food-status">Expires in 15 days</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tracking-card warning animate-on-scroll">
+                        <div class="food-item">
+                            <div class="food-emoji">🍞</div>
+                            <div class="food-info">
+                                <h4>Bread</h4>
+                                <div class="food-status">Expires in 7 days</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tracking-card expires-soon animate-on-scroll">
+                        <div class="food-item">
+                            <div class="food-emoji">🥗</div>
+                            <div class="food-info">
+                                <h4>Salad</h4>
+                                <div class="food-status">Expires today</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="feature-card card-2 fade-in-up">
-            <img src="assets/images/img__67x49.png" alt="Order Icon" class="card-icon">
-            <h3 class="card-title">Place Your Order</h3>
-            <p class="card-subtitle">With a few clicks</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #fce082;">x</span>
-                <span class="card-number-text" style="color: #fce082;">2</span>
+    <!-- Alerts Section -->
+    <section class="alerts-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Alerts, always in time.</h2>
+                <p class="section-subtitle">Enable notifications and FastBite will alert you when your food stops being fresh or is about to expire.</p>
+            </div>
+            <div class="alerts-content">
+                <div class="tracking-content animate-on-scroll">
+                    <h2>How long has it been open?</h2>
+                    <p>Open or stored for too long? FastBite will track the time since you opened, bought, or cooked your food. Smart reminders keep your meals fresh and safe.</p>
+                </div>
+                <div class="notification-demo">
+                    <div class="notification-card animate-on-scroll">
+                        <div class="notification-header">
+                            <div class="notification-icon">⚠️</div>
+                            <div class="notification-title">Fresh until tomorrow</div>
+                        </div>
+                        <div class="notification-text">You can still use your sliced bread, but remember, you're running out of time!</div>
+                    </div>
+                    <div class="notification-card animate-on-scroll">
+                        <div class="notification-header">
+                            <div class="notification-icon">🥛</div>
+                            <div class="notification-title">Expires tomorrow</div>
+                        </div>
+                        <div class="notification-text">Your milk expires tomorrow. Time to make that smoothie!</div>
+                    </div>
+                    <div class="notification-card animate-on-scroll">
+                        <div class="notification-header">
+                            <div class="notification-icon">🍎</div>
+                            <div class="notification-title">Still fresh</div>
+                        </div>
+                        <div class="notification-text">Your apples are still good for 5 more days.</div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="feature-card card-3 fade-in-up">
-            <img src="assets/images/img__1.png" alt="Track Icon" class="card-icon">
-            <h3 class="card-title">Track in Real-Time</h3>
-            <p class="card-subtitle">Fresh for 8 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #ff8f8f;">x</span>
-                <span class="card-number-text" style="color: #ff8f8f;">3</span>
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text animate-on-scroll">
+                    <h2>Download the App now</h2>
+                    <p>Experience seamless online ordering only on the FastBite App. Available for iOS and Android devices.</p>
+                    <div class="app-stores">
+                        <a href="#" class="store-button"><i class="fa-brands fa-app-store-ios"></i> App Store</a>
+                        <a href="#" class="store-button"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                    </div>
+                </div>
+                <div class="animate-on-scroll">
+                    <img src="/assets/images/img_kiff_app_dark_mode_screenshot.png" alt="" style="height: 650px;">
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="feature-card card-4 fade-in-up">
-            <img src="assets/images/img__2.png" alt="Enjoy Icon" class="card-icon">
-            <h3 class="card-title">Enjoy</h3>
-            <p class="card-subtitle">Fresh for 14 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #ffcf80;">x</span>
-                <span class="card-number-text" style="color: #ffcf80;">4</span>
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Stop wasting food and start saving money.</h2>
+                <p>Pay once, yours forever.</p>
+                <div class="qr-section">
+                    <img src="/assets/images/img_component_1.svg" alt="">
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Section Heading 1 -->
-        <h2 class="section-heading heading-1 fade-in-up">Your Next Meal is Just 4 Steps Away</h2>
-        <p class="section-subheading subheading-1 fade-in-up">Kiff tracks your food's state and orders it by<br>priority, so you will know what to eat at a glance.</p>
-
-        <!-- Expiration Control Section -->
-        <h2 class="section-heading heading-2 fade-in-up">Expiration<br>dates under<br>control.</h2>
-        <p class="section-subheading subheading-2 fade-in-up">If your food has an expiration date, Kiff will keep<br>it under control so you can eat it before it's too<br>late.</p>
-
-        <!-- Expiration Cards -->
-        <div class="expiration-card exp-card-1 fade-in-up">
-            <img src="assets/images/img__3.png" alt="Milk Icon" class="exp-card-icon">
-            <h3 class="exp-card-title">Milk</h3>
-            <p class="exp-card-subtitle">Expires in 15<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #b2bfd9;">x</span>
-                <span class="card-number-text" style="color: #b2bfd9;">1</span>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>FastBite</h3>
+                    <p>Discover and order the best food delivery from thousands of local restaurants. From craving to comfort in minutes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Press</a>
+                        <a href="#" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">Safety</a>
+                        <a href="#" class="footer-link">Terms</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                        <a href="#" class="footer-link">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 FastBite. All rights reserved.</p>
+                <div class="language-selector">
+                    <span>🌐</span>
+                    <span>English</span>
+                </div>
             </div>
         </div>
-
-        <div class="expiration-card exp-card-2 fade-in-up">
-            <img src="assets/images/img_vector.svg" alt="Warning Icon" class="exp-card-vector">
-            <p class="exp-card-warning">Expires in</p>
-            <p class="exp-card-days">7<span style="font-size: 20px;">days</span></p>
-            <p class="exp-card-date">Jun 5, 2025</p>
-        </div>
-
-        <div class="expiration-card exp-card-3 fade-in-up">
-            <img src="assets/images/img_vector.svg" alt="Warning Icon" class="exp-card-vector">
-            <p class="exp-card-warning">Expires</p>
-            <p class="exp-card-days">Today</p>
-            <p class="exp-card-date">Jun 5, 2025</p>
-        </div>
-
-        <!-- Fresh Food Section -->
-        <h2 class="section-heading heading-3 fade-in-up">Enjoy your food<br>always fresh.</h2>
-        <p class="section-subheading subheading-3 fade-in-up">Set the desired shelf life for each food and Kiff<br>will remind you to eat it before the time runs out.</p>
-
-        <div class="fresh-card fresh-card-1 fade-in-up">
-            <img src="assets/images/img__4.png" alt="Pasta Icon" class="card-icon">
-            <h3 class="exp-card-title">Pasta</h3>
-            <p class="exp-card-subtitle">Fresh until<br>tomorrow</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #ffcf80;">x</span>
-                <span class="card-number-text" style="color: #ffcf80;">2</span>
-            </div>
-        </div>
-
-        <div class="fresh-card fresh-card-2 fade-in-up">
-            <img src="assets/images/img_vector_green_600.svg" alt="Shelf Life Icon" class="exp-card-vector">
-            <img src="assets/images/img_vector_green_600_6x6.svg" alt="Check Icon" style="position: absolute; top: 28px; left: 22px; width: 6px; height: 6px;">
-            <p style="position: absolute; top: 15px; left: 46px; font-size: 22px; color: #36b535;">Shelf life</p>
-            <p class="exp-card-days">2<span style="font-size: 20px;">days</span></p>
-        </div>
-
-        <div class="fresh-card fresh-card-3 fade-in-up">
-            <img src="assets/images/img_vector_cyan_500.svg" alt="Tracked Icon" class="exp-card-vector">
-            <p style="position: absolute; top: 16px; left: 49px; font-size: 22px; color: #00cfcd;">Tracked for</p>
-            <p class="exp-card-days">1<span style="font-size: 20px;">day</span></p>
-            <p class="exp-card-date">since Jun 4, 2025</p>
-        </div>
-
-        <!-- Tracking Section -->
-        <h2 class="section-heading heading-4 fade-in-up">How long has it<br>been open?</h2>
-        <p class="section-subheading subheading-4 fade-in-up">Open or stored for too long? Kiff will track the<br>time since you opened, bought, or cooked your<br>food.</p>
-
-        <div class="tracking-card tracking-card-1 fade-in-up">
-            <img src="assets/images/img__5.png" alt="Eggs Icon" class="card-icon">
-            <h3 class="exp-card-title">Eggs</h3>
-            <p class="exp-card-subtitle">Fresh for 7 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #d9dfed;">x</span>
-                <span class="card-number-text" style="color: #d9dfed;">6</span>
-            </div>
-        </div>
-
-        <div class="tracking-card tracking-card-2 fade-in-up">
-            <img src="assets/images/img_vector_cyan_500.svg" alt="Tracked Icon" class="exp-card-vector">
-            <p style="position: absolute; top: 16px; left: 49px; font-size: 22px; color: #00cfcd;">Tracked for</p>
-            <p class="exp-card-days">28<span style="font-size: 20px;">days</span></p>
-            <p class="exp-card-date">since May 8, 2025</p>
-        </div>
-
-        <div class="tracking-card tracking-card-3 fade-in-up">
-            <img src="assets/images/img__6.png" alt="Matcha Icon" class="card-icon">
-            <h3 class="exp-card-title">Matcha</h3>
-            <p class="exp-card-subtitle">Fresh for 51 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #a0dcbb;">x</span>
-                <span class="card-number-text" style="color: #a0dcbb;">2</span>
-            </div>
-        </div>
-
-        <div class="tracking-card tracking-card-4 fade-in-up">
-            <img src="assets/images/img_vector_cyan_500.svg" alt="Tracked Icon" class="exp-card-vector">
-            <p style="position: absolute; top: 16px; left: 49px; font-size: 22px; color: #00cfcd;">Tracked for</p>
-            <p class="exp-card-days">9<span style="font-size: 20px;">days</span></p>
-            <p class="exp-card-date">since May 27, 2025</p>
-        </div>
-
-        <!-- Alerts Section -->
-        <h2 class="section-heading heading-5 fade-in-up">Alerts, always<br>in time.</h2>
-        <p class="section-subheading subheading-5 fade-in-up">Enable notifications and Kiff will alert you when<br>your food stops being fresh or is about to expire.</p>
-
-        <div class="alert-circle alert-circle-1 fade-in-up">
-            <img src="assets/images/img__102x76.png" alt="Fresh Alert" class="alert-image">
-            <!-- Curved text elements for "fresh until tomorrow" -->
-        </div>
-
-        <div class="alert-circle alert-circle-2 fade-in-up">
-            <img src="assets/images/img__3.png" alt="Expires Alert" class="alert-image">
-            <!-- Curved text elements for "expires tomorrow" -->
-        </div>
-
-        <div class="alert-circle alert-circle-3 fade-in-up">
-            <img src="assets/images/img__7.png" alt="Sliced Bread Alert" class="alert-image">
-            <!-- Curved text elements for "fresh until tomorrow sliced bread" -->
-        </div>
-
-        <!-- Notification Stack -->
-        <div class="notification-bg-2"></div>
-        <div class="notification-bg-1"></div>
-        <div class="notification">
-            <img src="assets/images/img__22x15.png" alt="Notification Icon" class="notification-icon">
-            <p class="notification-title">Fresh until tomorrow</p>
-            <p class="notification-text">You can still use your sliced bread, but<br>remember, you're running out of time!</p>
-        </div>
-
-        <!-- Download Section -->
-        <div class="download-section">
-            <h2 class="download-heading fade-in-up">Download the App now</h2>
-            <p class="download-subheading fade-in-up">Experience seamless online ordering only on the Fastbite App</p>
-        </div>
-
-        <img src="assets/images/img_kiff_app_dark_mode_screenshot.png" alt="Fast Bite App Dark Mode" class="download-phone">
-
-        <!-- Final CTA Section -->
-        <h2 class="final-heading fade-in-up">Stop wasting food and start<br>saving money.</h2>
-        <p class="final-subheading fade-in-up">Pay once, yours forever.</p>
-        <img src="assets/images/img_component_1.svg" alt="QR Code" class="qr-code">
-
-        <!-- Footer -->
-        <div class="footer">
-            <img src="assets/images/img_fast_bite_white040306_2.png" alt="Fast Bite Logo" class="footer-logo">
-            <p class="footer-copyright">FastBite.<br>© Copyright 2025. All Rights Reserved.</p>
-
-            <div class="footer-link footer-terms">Terms</div>
-            <div class="footer-link footer-privacy">Privacy</div>
-
-            <div class="footer-link footer-nav-home">Home</div>
-            <div class="footer-link footer-nav-privacy">Privacy</div>
-            <div class="footer-link footer-nav-terms">Terms and conditions</div>
-            <div class="footer-link footer-nav-support">Help and Support</div>
-
-            <div class="footer-social footer-instagram">Instagram</div>
-            <div class="footer-social footer-facebook">Facebook</div>
-            <div class="footer-social footer-twitter">Twitter</div>
-
-            <div class="language-selector">
-                <img src="assets/images/img_component_1_gray_600_01.svg" alt="Language Icon" class="language-icon">
-                <span class="language-text">ES</span>
-            </div>
-        </div>
-    </div>
+    </footer>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav-item, .footer-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                // Simulate navigation
-                console.log('Navigating to:', this.textContent.trim());
-
-                // Add visual feedback
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 150);
-            });
-        });
-
-        // Download button functionality
-        document.querySelector('.nav-download').addEventListener('click', function() {
-            alert('Redirecting to app store...');
-            console.log('Download app clicked');
-        });
-
-        // QR Code interaction
-        document.querySelector('.qr-code').addEventListener('click', function() {
-            alert('Scan QR code with your mobile device to download the app!');
-            console.log('QR code clicked');
-        });
-
-        // Feature card interactions
-        document.querySelectorAll('.feature-card, .expiration-card, .fresh-card, .tracking-card').forEach(card => {
-            card.addEventListener('click', function() {
-                console.log('Feature card clicked:', this.querySelector('h3')?.textContent || 'Card');
-
-                // Add ripple effect
-                const ripple = document.createElement('div');
-                ripple.style.cssText = `
-                    position: absolute;
-                    border-radius: 50%;
-                    background: rgba(255, 255, 255, 0.3);
-                    transform: scale(0);
-                    animation: ripple 0.6s linear;
-                    pointer-events: none;
-                    width: 100px;
-                    height: 100px;
-                    left: 50%;
-                    top: 50%;
-                    margin-left: -50px;
-                    margin-top: -50px;
-                `;
-
-                this.style.position = 'relative';
-                this.style.overflow = 'hidden';
-                this.appendChild(ripple);
-
-                setTimeout(() => {
-                    ripple.remove();
-                }, 600);
-            });
-        });
-
-        // Alert circles interaction
-        document.querySelectorAll('.alert-circle').forEach(circle => {
-            circle.addEventListener('click', function() {
-                console.log('Alert circle clicked');
-
-                // Simulate alert demonstration
-                const alertDemo = document.createElement('div');
-                alertDemo.style.cssText = `
-                    position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    background: #141414;
-                    color: white;
-                    padding: 15px 20px;
-                    border-radius: 10px;
-                    z-index: 1000;
-                    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-                    animation: slideInRight 0.3s ease;
-                `;
-                alertDemo.textContent = 'Alert notification demo!';
-
-                document.body.appendChild(alertDemo);
-
-                setTimeout(() => {
-                    alertDemo.remove();
-                }, 3000);
-            });
-        });
-
-        // Phone image interactions
-        document.querySelectorAll('.hero-phone-left, .hero-phone-right, .download-phone').forEach(phone => {
-            phone.addEventListener('click', function() {
-                console.log('Phone screenshot clicked');
-
-                // Create modal overlay
-                const modal = document.createElement('div');
-                modal.style.cssText = `
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0,0,0,0.8);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    z-index: 1000;
-                    cursor: pointer;
-                `;
-
-                const modalImg = document.createElement('img');
-                modalImg.src = this.src;
-                modalImg.style.cssText = `
-                    max-width: 90%;
-                    max-height: 90%;
-                    border-radius: 20px;
-                    box-shadow: 0 10px 50px rgba(0,0,0,0.5);
-                `;
-
-                modal.appendChild(modalImg);
-                document.body.appendChild(modal);
-
-                modal.addEventListener('click', () => {
-                    modal.remove();
-                });
-            });
-        });
-
-        // Language selector
-        document.querySelector('.language-selector').addEventListener('click', function() {
-            const languages = ['EN', 'ES', 'FR', 'DE', 'IT'];
-            const currentLang = this.querySelector('.language-text').textContent;
-            const currentIndex = languages.indexOf(currentLang);
-            const nextIndex = (currentIndex + 1) % languages.length;
-
-            this.querySelector('.language-text').textContent = languages[nextIndex];
-            console.log('Language changed to:', languages[nextIndex]);
-        });
-
-        // Social media links
-        document.querySelectorAll('.footer-social').forEach(social => {
-            social.addEventListener('click', function() {
-                const platform = this.textContent.trim();
-                alert(`Opening ${platform}...`);
-                console.log(`${platform} clicked`);
-            });
-        });
-
-        // Notification interaction
-        document.querySelector('.notification').addEventListener('click', function() {
-            console.log('Notification clicked');
-
-            // Animate notification
-            this.style.transform = 'scale(1.05)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 200);
-
-            alert('Notification: Your sliced bread expires tomorrow!');
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
 
         // Scroll animations
@@ -410,51 +281,53 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('animated');
                 }
             });
         }, observerOptions);
 
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in-up').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
         });
 
-        // Add CSS animations
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes ripple {
-                to {
-                    transform: scale(4);
-                    opacity: 0;
-                }
-            }
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
 
-            @keyframes slideInRight {
-                from {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
-                to {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Initialize page
-        console.log('Fast Bite landing page loaded successfully!');
-
-        // Simulate loading state
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '1';
-            console.log('All assets loaded');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('Navigation clicked:', link.textContent);
+            });
+        });
+
+        // Interactive elements
+        document.querySelectorAll('.feature-card, .tracking-card, .notification-card').forEach(card => {
+            card.addEventListener('click', () => {
+                console.log('Card clicked:', card.querySelector('.card-title, h4, .notification-title')?.textContent);
+            });
+        });
+
+        // QR Code interaction
+        document.querySelector('.qr-code').addEventListener('click', () => {
+            alert('Scan QR code with your mobile device to download the FastBite app!');
+        });
+
+        // Store buttons
+        document.querySelectorAll('.store-button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert(`Redirecting to ${btn.textContent.trim()}...`);
+            });
+        });
+
+        console.log('FastBite landing page loaded successfully!');
     </script>
 </body>
 </html>
