@@ -1,281 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fast Bite - Food Delivery App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <!-- Navigation -->
-            <div class="navigation">
-                <img src="assets/images/img_fast_bite_white040306_2.png" alt="Fast Bite Logo" class="logo">
-                <div class="nav-item nav-about">
-                    <span class="nav-text">About</span>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="">
+        <section class="h-screen bg-[#2D6A4F]">
+            <header class="w-full flex justify-between items-center h-20 mx-20 sticky top-0">
+                <div class="ml-20">
+                    <img src="/assets/images/img_fast_bite_white040306_2.png" alt="Fast Bite 2025." class="h-6">
                 </div>
-                <div class="nav-item nav-awareness">
-                    <span class="nav-text">Awareness</span>
+                <div class="flex justify-content items-center gap-10 px-20">
+                    <ul class="gap-10 items-center inline-flex text-white">
+                        <li class="hover:cursor-pointer hover:text-[#36B535]">About</li>
+                        <li class="hover:cursor-pointer hover:text-[#36B535]">Awareness</li>
+                        <li class="hover:cursor-pointer hover:text-[#36B535]">Support</li>
+                    </ul>
+                    <button class="h-10 bg-black rounded-full w-[150px] text-white hover:cursor-pointer hover:bg-gray-950 transition-color duration-300">Download</button>
                 </div>
-                <div class="nav-item nav-support">
-                    <span class="nav-text">Support</span>
-                </div>
-                <div class="nav-item nav-download">
-                    <span class="nav-text">Download</span>
-                </div>
-            </div>
+            </header>
+            
+            <section class="h-[80%] flex mx-auto flex-col items-center justify-between relative">
+                <img src="/assets/images/img_kiff_app_screenshot_400x312.png" alt="Image of a phone" class="h-96 absolute left-14 top-16" />
+                <h1 class="text-9xl text-white uppercase">fast <br> bite</h1>
+                <p class="text-white text-3xl text-center w-[900px]">Discover and order the best food delivery from thousands of local restaurants. From craving to comfort in minutes.</p>
+                <img src="/assets/images/img_kiff_app_screenshot_400x312.png" alt="Image of a phone" class="h-96 absolute right-14 top-16" />
+            </section>
+        </section>
 
-            <!-- Hero Content -->
-            <h1 class="hero-title fade-in-up">FAST</h1>
-            <h1 class="hero-subtitle fade-in-up">BITE</h1>
-            <img src="assets/images/img_kiff_app_screenshot.png" alt="Fast Bite App Screenshot" class="hero-phone-left pulse">
-            <img src="assets/images/img_kiff_app_screenshot_400x312.png" alt="Fast Bite App Screenshot" class="hero-phone-right pulse">
-            <p class="hero-description fade-in-up">Discover and order the best food delivery from thousands of local restaurants. From craving to comfort in minutes.</p>
-        </div>
-
-        <!-- Feature Cards Section -->
-        <div class="feature-card card-1 fade-in-up">
-            <img src="assets/images/img_.png" alt="Discover Icon" class="card-icon">
-            <h3 class="card-title">Discover & Choose</h3>
-            <p class="card-subtitle">From awesome Vendors</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #a0dcbb;">x</span>
-                <span class="card-number-text" style="color: #a0dcbb;">1</span>
-            </div>
-        </div>
-
-        <div class="feature-card card-2 fade-in-up">
-            <img src="assets/images/img__67x49.png" alt="Order Icon" class="card-icon">
-            <h3 class="card-title">Place Your Order</h3>
-            <p class="card-subtitle">With a few clicks</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #fce082;">x</span>
-                <span class="card-number-text" style="color: #fce082;">2</span>
-            </div>
-        </div>
-
-        <div class="feature-card card-3 fade-in-up">
-            <img src="assets/images/img__1.png" alt="Track Icon" class="card-icon">
-            <h3 class="card-title">Track in Real-Time</h3>
-            <p class="card-subtitle">Fresh for 8 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #ff8f8f;">x</span>
-                <span class="card-number-text" style="color: #ff8f8f;">3</span>
-            </div>
-        </div>
-
-        <div class="feature-card card-4 fade-in-up">
-            <img src="assets/images/img__2.png" alt="Enjoy Icon" class="card-icon">
-            <h3 class="card-title">Enjoy</h3>
-            <p class="card-subtitle">Fresh for 14 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #ffcf80;">x</span>
-                <span class="card-number-text" style="color: #ffcf80;">4</span>
-            </div>
-        </div>
-
-        <!-- Section Heading 1 -->
-        <h2 class="section-heading heading-1 fade-in-up">Your Next Meal is Just 4 Steps Away</h2>
-        <p class="section-subheading subheading-1 fade-in-up">Kiff tracks your food's state and orders it by<br>priority, so you will know what to eat at a glance.</p>
-
-        <!-- Expiration Control Section -->
-        <h2 class="section-heading heading-2 fade-in-up">Expiration<br>dates under<br>control.</h2>
-        <p class="section-subheading subheading-2 fade-in-up">If your food has an expiration date, Kiff will keep<br>it under control so you can eat it before it's too<br>late.</p>
-
-        <!-- Expiration Cards -->
-        <div class="expiration-card exp-card-1 fade-in-up">
-            <img src="assets/images/img__3.png" alt="Milk Icon" class="exp-card-icon">
-            <h3 class="exp-card-title">Milk</h3>
-            <p class="exp-card-subtitle">Expires in 15<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #b2bfd9;">x</span>
-                <span class="card-number-text" style="color: #b2bfd9;">1</span>
-            </div>
-        </div>
-
-        <div class="expiration-card exp-card-2 fade-in-up">
-            <img src="assets/images/img_vector.svg" alt="Warning Icon" class="exp-card-vector">
-            <p class="exp-card-warning">Expires in</p>
-            <p class="exp-card-days">7<span style="font-size: 20px;">days</span></p>
-            <p class="exp-card-date">Jun 5, 2025</p>
-        </div>
-
-        <div class="expiration-card exp-card-3 fade-in-up">
-            <img src="assets/images/img_vector.svg" alt="Warning Icon" class="exp-card-vector">
-            <p class="exp-card-warning">Expires</p>
-            <p class="exp-card-days">Today</p>
-            <p class="exp-card-date">Jun 5, 2025</p>
-        </div>
-
-        <!-- Fresh Food Section -->
-        <h2 class="section-heading heading-3 fade-in-up">Enjoy your food<br>always fresh.</h2>
-        <p class="section-subheading subheading-3 fade-in-up">Set the desired shelf life for each food and Kiff<br>will remind you to eat it before the time runs out.</p>
-
-        <div class="fresh-card fresh-card-1 fade-in-up">
-            <img src="assets/images/img__4.png" alt="Pasta Icon" class="card-icon">
-            <h3 class="exp-card-title">Pasta</h3>
-            <p class="exp-card-subtitle">Fresh until<br>tomorrow</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #ffcf80;">x</span>
-                <span class="card-number-text" style="color: #ffcf80;">2</span>
-            </div>
-        </div>
-
-        <div class="fresh-card fresh-card-2 fade-in-up">
-            <img src="assets/images/img_vector_green_600.svg" alt="Shelf Life Icon" class="exp-card-vector">
-            <img src="assets/images/img_vector_green_600_6x6.svg" alt="Check Icon" style="position: absolute; top: 28px; left: 22px; width: 6px; height: 6px;">
-            <p style="position: absolute; top: 15px; left: 46px; font-size: 22px; color: #36b535;">Shelf life</p>
-            <p class="exp-card-days">2<span style="font-size: 20px;">days</span></p>
-        </div>
-
-        <div class="fresh-card fresh-card-3 fade-in-up">
-            <img src="assets/images/img_vector_cyan_500.svg" alt="Tracked Icon" class="exp-card-vector">
-            <p style="position: absolute; top: 16px; left: 49px; font-size: 22px; color: #00cfcd;">Tracked for</p>
-            <p class="exp-card-days">1<span style="font-size: 20px;">day</span></p>
-            <p class="exp-card-date">since Jun 4, 2025</p>
-        </div>
-
-        <!-- Tracking Section -->
-        <h2 class="section-heading heading-4 fade-in-up">How long has it<br>been open?</h2>
-        <p class="section-subheading subheading-4 fade-in-up">Open or stored for too long? Kiff will track the<br>time since you opened, bought, or cooked your<br>food.</p>
-
-        <div class="tracking-card tracking-card-1 fade-in-up">
-            <img src="assets/images/img__5.png" alt="Eggs Icon" class="card-icon">
-            <h3 class="exp-card-title">Eggs</h3>
-            <p class="exp-card-subtitle">Fresh for 7 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #d9dfed;">x</span>
-                <span class="card-number-text" style="color: #d9dfed;">6</span>
-            </div>
-        </div>
-
-        <div class="tracking-card tracking-card-2 fade-in-up">
-            <img src="assets/images/img_vector_cyan_500.svg" alt="Tracked Icon" class="exp-card-vector">
-            <p style="position: absolute; top: 16px; left: 49px; font-size: 22px; color: #00cfcd;">Tracked for</p>
-            <p class="exp-card-days">28<span style="font-size: 20px;">days</span></p>
-            <p class="exp-card-date">since May 8, 2025</p>
-        </div>
-
-        <div class="tracking-card tracking-card-3 fade-in-up">
-            <img src="assets/images/img__6.png" alt="Matcha Icon" class="card-icon">
-            <h3 class="exp-card-title">Matcha</h3>
-            <p class="exp-card-subtitle">Fresh for 51 more<br>days</p>
-            <div class="card-number">
-                <span class="card-number-x" style="color: #a0dcbb;">x</span>
-                <span class="card-number-text" style="color: #a0dcbb;">2</span>
-            </div>
-        </div>
-
-        <div class="tracking-card tracking-card-4 fade-in-up">
-            <img src="assets/images/img_vector_cyan_500.svg" alt="Tracked Icon" class="exp-card-vector">
-            <p style="position: absolute; top: 16px; left: 49px; font-size: 22px; color: #00cfcd;">Tracked for</p>
-            <p class="exp-card-days">9<span style="font-size: 20px;">days</span></p>
-            <p class="exp-card-date">since May 27, 2025</p>
-        </div>
-
-        <!-- Alerts Section -->
-        <h2 class="section-heading heading-5 fade-in-up">Alerts, always<br>in time.</h2>
-        <p class="section-subheading subheading-5 fade-in-up">Enable notifications and Kiff will alert you when<br>your food stops being fresh or is about to expire.</p>
-
-        <div class="alert-circle alert-circle-1 fade-in-up">
-            <img src="assets/images/img__102x76.png" alt="Fresh Alert" class="alert-image">
-            <!-- Curved text elements for "fresh until tomorrow" -->
-        </div>
-
-        <div class="alert-circle alert-circle-2 fade-in-up">
-            <img src="assets/images/img__3.png" alt="Expires Alert" class="alert-image">
-            <!-- Curved text elements for "expires tomorrow" -->
-        </div>
-
-        <div class="alert-circle alert-circle-3 fade-in-up">
-            <img src="assets/images/img__7.png" alt="Sliced Bread Alert" class="alert-image">
-            <!-- Curved text elements for "fresh until tomorrow sliced bread" -->
-        </div>
-
-        <!-- Notification Stack -->
-        <div class="notification-bg-2"></div>
-        <div class="notification-bg-1"></div>
-        <div class="notification">
-            <img src="assets/images/img__22x15.png" alt="Notification Icon" class="notification-icon">
-            <p class="notification-title">Fresh until tomorrow</p>
-            <p class="notification-text">You can still use your sliced bread, but<br>remember, you're running out of time!</p>
-        </div>
-
-        <!-- Download Section -->
-        <div class="download-section">
-            <h2 class="download-heading fade-in-up">Download the App now</h2>
-            <p class="download-subheading fade-in-up">Experience seamless online ordering only on the Fastbite App</p>
-        </div>
-
-        <img src="assets/images/img_kiff_app_dark_mode_screenshot.png" alt="Fast Bite App Dark Mode" class="download-phone">
-
-        <!-- Final CTA Section -->
-        <h2 class="final-heading fade-in-up">Stop wasting food and start<br>saving money.</h2>
-        <p class="final-subheading fade-in-up">Pay once, yours forever.</p>
-        <img src="assets/images/img_component_1.svg" alt="QR Code" class="qr-code">
-
-        <!-- Footer -->
-        <div class="footer">
-            <img src="assets/images/img_fast_bite_white040306_2.png" alt="Fast Bite Logo" class="footer-logo">
-            <p class="footer-copyright">FastBite.<br>© Copyright 2025. All Rights Reserved.</p>
-
-            <div class="footer-link footer-terms">Terms</div>
-            <div class="footer-link footer-privacy">Privacy</div>
-
-            <div class="footer-link footer-nav-home">Home</div>
-            <div class="footer-link footer-nav-privacy">Privacy</div>
-            <div class="footer-link footer-nav-terms">Terms and conditions</div>
-            <div class="footer-link footer-nav-support">Help and Support</div>
-
-            <div class="footer-social footer-instagram">Instagram</div>
-            <div class="footer-social footer-facebook">Facebook</div>
-            <div class="footer-social footer-twitter">Twitter</div>
-
-            <div class="language-selector">
-                <img src="assets/images/img_component_1_gray_600_01.svg" alt="Language Icon" class="language-icon">
-                <span class="language-text">ES</span>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav-item, .footer-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                // Simulate navigation
-                console.log('Navigating to:', this.textContent.trim());
+      // Smooth scrolling for navigation links
+      document.querySelectorAll(".nav-item, .footer-link").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          // Simulate navigation
+          console.log("Navigating to:", this.textContent.trim());
 
-                // Add visual feedback
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 150);
-            });
+          // Add visual feedback
+          this.style.transform = "scale(0.95)";
+          setTimeout(() => {
+            this.style.transform = "scale(1)";
+          }, 150);
+        });
+      });
+
+      // Download button functionality
+      document
+        .querySelector(".nav-download")
+        .addEventListener("click", function () {
+          alert("Redirecting to app store...");
+          console.log("Download app clicked");
         });
 
-        // Download button functionality
-        document.querySelector('.nav-download').addEventListener('click', function() {
-            alert('Redirecting to app store...');
-            console.log('Download app clicked');
-        });
+      // QR Code interaction
+      document.querySelector(".qr-code").addEventListener("click", function () {
+        alert("Scan QR code with your mobile device to download the app!");
+        console.log("QR code clicked");
+      });
 
-        // QR Code interaction
-        document.querySelector('.qr-code').addEventListener('click', function() {
-            alert('Scan QR code with your mobile device to download the app!');
-            console.log('QR code clicked');
-        });
+      // Feature card interactions
+      document
+        .querySelectorAll(
+          ".feature-card, .expiration-card, .fresh-card, .tracking-card"
+        )
+        .forEach((card) => {
+          card.addEventListener("click", function () {
+            console.log(
+              "Feature card clicked:",
+              this.querySelector("h3")?.textContent || "Card"
+            );
 
-        // Feature card interactions
-        document.querySelectorAll('.feature-card, .expiration-card, .fresh-card, .tracking-card').forEach(card => {
-            card.addEventListener('click', function() {
-                console.log('Feature card clicked:', this.querySelector('h3')?.textContent || 'Card');
-
-                // Add ripple effect
-                const ripple = document.createElement('div');
-                ripple.style.cssText = `
+            // Add ripple effect
+            const ripple = document.createElement("div");
+            ripple.style.cssText = `
                     position: absolute;
                     border-radius: 50%;
                     background: rgba(255, 255, 255, 0.3);
@@ -290,24 +93,24 @@
                     margin-top: -50px;
                 `;
 
-                this.style.position = 'relative';
-                this.style.overflow = 'hidden';
-                this.appendChild(ripple);
+            this.style.position = "relative";
+            this.style.overflow = "hidden";
+            this.appendChild(ripple);
 
-                setTimeout(() => {
-                    ripple.remove();
-                }, 600);
-            });
+            setTimeout(() => {
+              ripple.remove();
+            }, 600);
+          });
         });
 
-        // Alert circles interaction
-        document.querySelectorAll('.alert-circle').forEach(circle => {
-            circle.addEventListener('click', function() {
-                console.log('Alert circle clicked');
+      // Alert circles interaction
+      document.querySelectorAll(".alert-circle").forEach((circle) => {
+        circle.addEventListener("click", function () {
+          console.log("Alert circle clicked");
 
-                // Simulate alert demonstration
-                const alertDemo = document.createElement('div');
-                alertDemo.style.cssText = `
+          // Simulate alert demonstration
+          const alertDemo = document.createElement("div");
+          alertDemo.style.cssText = `
                     position: fixed;
                     top: 20px;
                     right: 20px;
@@ -319,24 +122,28 @@
                     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
                     animation: slideInRight 0.3s ease;
                 `;
-                alertDemo.textContent = 'Alert notification demo!';
+          alertDemo.textContent = "Alert notification demo!";
 
-                document.body.appendChild(alertDemo);
+          document.body.appendChild(alertDemo);
 
-                setTimeout(() => {
-                    alertDemo.remove();
-                }, 3000);
-            });
+          setTimeout(() => {
+            alertDemo.remove();
+          }, 3000);
         });
+      });
 
-        // Phone image interactions
-        document.querySelectorAll('.hero-phone-left, .hero-phone-right, .download-phone').forEach(phone => {
-            phone.addEventListener('click', function() {
-                console.log('Phone screenshot clicked');
+      // Phone image interactions
+      document
+        .querySelectorAll(
+          ".hero-phone-left, .hero-phone-right, .download-phone"
+        )
+        .forEach((phone) => {
+          phone.addEventListener("click", function () {
+            console.log("Phone screenshot clicked");
 
-                // Create modal overlay
-                const modal = document.createElement('div');
-                modal.style.cssText = `
+            // Create modal overlay
+            const modal = document.createElement("div");
+            modal.style.cssText = `
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -350,83 +157,88 @@
                     cursor: pointer;
                 `;
 
-                const modalImg = document.createElement('img');
-                modalImg.src = this.src;
-                modalImg.style.cssText = `
+            const modalImg = document.createElement("img");
+            modalImg.src = this.src;
+            modalImg.style.cssText = `
                     max-width: 90%;
                     max-height: 90%;
                     border-radius: 20px;
                     box-shadow: 0 10px 50px rgba(0,0,0,0.5);
                 `;
 
-                modal.appendChild(modalImg);
-                document.body.appendChild(modal);
+            modal.appendChild(modalImg);
+            document.body.appendChild(modal);
 
-                modal.addEventListener('click', () => {
-                    modal.remove();
-                });
+            modal.addEventListener("click", () => {
+              modal.remove();
             });
+          });
         });
 
-        // Language selector
-        document.querySelector('.language-selector').addEventListener('click', function() {
-            const languages = ['EN', 'ES', 'FR', 'DE', 'IT'];
-            const currentLang = this.querySelector('.language-text').textContent;
-            const currentIndex = languages.indexOf(currentLang);
-            const nextIndex = (currentIndex + 1) % languages.length;
+      // Language selector
+      document
+        .querySelector(".language-selector")
+        .addEventListener("click", function () {
+          const languages = ["EN", "ES", "FR", "DE", "IT"];
+          const currentLang = this.querySelector(".language-text").textContent;
+          const currentIndex = languages.indexOf(currentLang);
+          const nextIndex = (currentIndex + 1) % languages.length;
 
-            this.querySelector('.language-text').textContent = languages[nextIndex];
-            console.log('Language changed to:', languages[nextIndex]);
+          this.querySelector(".language-text").textContent =
+            languages[nextIndex];
+          console.log("Language changed to:", languages[nextIndex]);
         });
 
-        // Social media links
-        document.querySelectorAll('.footer-social').forEach(social => {
-            social.addEventListener('click', function() {
-                const platform = this.textContent.trim();
-                alert(`Opening ${platform}...`);
-                console.log(`${platform} clicked`);
-            });
+      // Social media links
+      document.querySelectorAll(".footer-social").forEach((social) => {
+        social.addEventListener("click", function () {
+          const platform = this.textContent.trim();
+          alert(`Opening ${platform}...`);
+          console.log(`${platform} clicked`);
+        });
+      });
+
+      // Notification interaction
+      document
+        .querySelector(".notification")
+        .addEventListener("click", function () {
+          console.log("Notification clicked");
+
+          // Animate notification
+          this.style.transform = "scale(1.05)";
+          setTimeout(() => {
+            this.style.transform = "scale(1)";
+          }, 200);
+
+          alert("Notification: Your sliced bread expires tomorrow!");
         });
 
-        // Notification interaction
-        document.querySelector('.notification').addEventListener('click', function() {
-            console.log('Notification clicked');
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
 
-            // Animate notification
-            this.style.transform = 'scale(1.05)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 200);
-
-            alert('Notification: Your sliced bread expires tomorrow!');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
         });
+      }, observerOptions);
 
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+      // Observe all fade-in elements
+      document.querySelectorAll(".fade-in-up").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(30px)";
+        el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(el);
+      });
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in-up').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-
-        // Add CSS animations
-        const style = document.createElement('style');
-        style.textContent = `
+      // Add CSS animations
+      const style = document.createElement("style");
+      style.textContent = `
             @keyframes ripple {
                 to {
                     transform: scale(4);
@@ -445,16 +257,16 @@
                 }
             }
         `;
-        document.head.appendChild(style);
+      document.head.appendChild(style);
 
-        // Initialize page
-        console.log('Fast Bite landing page loaded successfully!');
+      // Initialize page
+      console.log("Fast Bite landing page loaded successfully!");
 
-        // Simulate loading state
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '1';
-            console.log('All assets loaded');
-        });
+      // Simulate loading state
+      window.addEventListener("load", () => {
+        document.body.style.opacity = "1";
+        console.log("All assets loaded");
+      });
     </script>
-</body>
+  </body>
 </html>
