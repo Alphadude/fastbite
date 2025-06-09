@@ -72,7 +72,7 @@
       </div>
 
       <!-- Feature Cards Section -->
-      <div class="bg-white min-h-screen flex items-center justify-center p-6">
+      <div class="bg-white flex items-center justify-center px-6 pt-20">
         <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
           <!-- Left Side: Steps -->
           <div class="grid grid-cols-2 gap-y-6">
@@ -171,9 +171,9 @@
           </div>
         </div>
       </div>
-
+      
       <!-- Expiration Control Section -->
-      <div class="bg-white min-h-screen flex items-center justify-center p-6">
+      <div class="bg-white flex items-center justify-center px-6 pt-20">
         <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
           <!-- text -->
           <div class="space-y-20">
@@ -217,12 +217,12 @@
                 <img
                   src="assets/images/img_vector.svg"
                   alt="Warning Icon"
-                  class="exp-card-vector"
+                  class="w-[15px] h-[21px]"
                 />
                 <p
                   class="text-[22px] font-normal leading-[28px] text-[#ff4900]"
                 >
-                  Expires in
+                  Expires
                 </p>
               </div>
               <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">
@@ -241,12 +241,12 @@
                 <img
                   src="assets/images/img_vector.svg"
                   alt="Warning Icon"
-                  class="exp-card-vector"
+                  class="w-[15px] h-[21px]"
                 />
                 <p
                   class="text-[22px] font-normal leading-[28px] text-[#ff4900]"
                 >
-                  Expires in
+                  Expires
                 </p>
               </div>
               <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">
@@ -260,270 +260,324 @@
         </div>
       </div>
 
-      <!-- Fresh Food Section -->
-      <h2 class="section-heading heading-3 fade-in-up">
-        Enjoy your food<br />always fresh.
-      </h2>
-      <p class="section-subheading subheading-3 fade-in-up">
-        Set the desired shelf life for each food and Kiff<br />will remind you
-        to eat it before the time runs out.
-      </p>
+      <!-- Fresh food section -->
+      <div class="bg-white flex items-center justify-center px-6 pt-20">
+        <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="relative">
+            <div
+              class="relative bg-gradient-to-br from-orange-100 to-orange-300 p-6 h-[215px] w-[224px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card absolute left-[50px]"
+              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)"
+            >
+              <img
+                src="assets/images/img__4.png"
+                alt="Pasta Icon"
+                class="w-[49px] h-[67px] object-contain"
+              />
+              <h3 class="text-[24px] font-normal leading-[30px] text-black">
+                Pasta
+              </h3>
+              <p class="text-[14px] leading-[23px] font-normal">
+                Fresh until<br />tomorrow
+              </p>
+              <div class="card-number">
+                <span class="card-number-x" style="color: #ffcf80">x</span>
+                <span class="card-number-text" style="color: #ffcf80">2</span>
+              </div>
+            </div>
+    
+            <div
+              class="relative bg-white p-6 h-[215px] w-[224px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card absolute -top-[60px] left-[150px]"
+              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)"
+            >
+              <img
+                src="assets/images/img_vector_green_600.svg"
+                alt="Shelf Life Icon"
+                class="w-[15px] h-[21px]"
+              />
+              <img
+                src="assets/images/img_vector_green_600_6x6.svg"
+                alt="Check Icon"
+                style="
+                  position: absolute;
+                  top: 28px;
+                  left: 22px;
+                  width: 6px;
+                  height: 6px;
+                "
+              />
+              <p
+                style="
+                  position: absolute;
+                  top: 15px;
+                  left: 46px;
+                  font-size: 22px;
+                  color: #36b535;
+                "
+              >
+                Shelf life
+              </p>
+              <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">
+                2<span style="font-size: 20px">days</span>
+              </p>
+            </div>
+    
+            <div
+              class="relative bg-white p-6 h-[215px] w-[224px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card absolute -top-[120px] left-[250px]"
+              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)"
+            >
+                <img
+                src="assets/images/img_vector_cyan_500.svg"
+                alt="Tracked Icon"
+                class="w-[15px] h-[21px]"
+              />
+              <p
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 49px;
+                  font-size: 22px;
+                  color: #00cfcd;
+                "
+              >
+                Tracked for
+              </p>
+              <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">1<span style="font-size: 20px">day</span></p>
+              <p class="text-[18px] font-normal leading-[23px] text-[#1d1d1d]">since Jun 4, 2025</p>
+          </div>
+    
+        </div>
 
-      <div class="fresh-card fresh-card-1 fade-in-up">
-        <img
-          src="assets/images/img__4.png"
-          alt="Pasta Icon"
-          class="card-icon"
-        />
-        <h3 class="exp-card-title">Pasta</h3>
-        <p class="text-[14px] leading-[23px] font-normal">
-          Fresh until<br />tomorrow
-        </p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #ffcf80">x</span>
-          <span class="card-number-text" style="color: #ffcf80">2</span>
+        <!-- text -->
+          <div>
+            <h2 class="fade-in-up text-[60px] font-bold text-[#1d1d1d]">
+              Enjoy your food<br />always fresh.
+            </h2>
+            <p class="fade-in-up text-[20px] font-medium leading-[32px] text-[#36b535]">
+              Set the desired shelf life for each food and Kiff<br />will remind you
+              to eat it before the time runs out.
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Tracking Section -->
+     <div class="bg-white flex items-center justify-center px-6 pt-20">
+        <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- text -->
+          <div>
+            <h2 class="fade-in-up text-[60px] font-bold text-[#1d1d1d]">
+             How long has it<br />been open?
+           </h2>
+           <p class="fade-in-up text-[20px] font-medium leading-[32px] text-[#36b535]">
+             Open or stored for too long? Kiff will track the<br />time since you
+             opened, bought, or cooked your<br />food.
+           </p>
+          </div>
+      
+        <div class="grid grid-cols-2 gap-y-6">
+          <div class="relative bg-gradient-to-br from-gray-100 to-gray-300 p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)">
+            <img
+                src="assets/images/img__5.png"
+                alt="Eggs Icon"
+                class="w-[49px] h-[67px] object-contain"
+              />
+              <h3 class="text-[24px] font-normal leading-[30px] text-black">Eggs</h3>
+              <p class="text-[14px] leading-[23px] font-normal">
+                Fresh for 7 more<br />days
+              </p>
+              <div class="card-number">
+                <span class="card-number-x" style="color: #d9dfed">x</span>
+                <span class="card-number-text" style="color: #d9dfed">6</span>
+              </div>
+          </div>
+  
+          <div class="relative bg-white p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)">
+            <img
+                src="assets/images/img_vector_cyan_500.svg"
+                alt="Tracked Icon"
+                class="w-[15px] h-[21px]"
+              />
+              <p
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 49px;
+                  font-size: 22px;
+                  color: #00cfcd;
+                "
+              >
+              Tracked for
+              </p>
+              <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">
+                28<span style="font-size: 20px">days</span>
+              </p>
+              <p class="text-[18px] font-normal leading-[23px] text-[#1d1d1d]">since May 8, 2025</p>
+          </div>
+  
+          <div class="relative bg-gradient-to-br from-green-100 to-blue-300 p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)">
+            <img
+                src="assets/images/img__6.png"
+                alt="Matcha Icon"
+                class="w-[49px] h-[67px] object-contain"
+              />
+              <h3 class="text-[24px] font-normal leading-[30px] text-black">
+                Matcha
+              </h3>
+              <p class="text-[14px] leading-[23px] font-normal">
+                Fresh for 51 more<br />days
+              </p>
+              <div class="card-number">
+                <span class="card-number-x" style="color: #a0dcbb">x</span>
+                <span class="card-number-text" style="color: #a0dcbb">2</span>
+              </div>
+          </div>
+  
+          <div class="relative bg-white p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)">
+            <img
+                src="assets/images/img_vector_cyan_500.svg"
+                alt="Tracked Icon"
+                class="w-[15px] h-[21px]"
+              />
+              <p
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 49px;
+                  font-size: 22px;
+                  color: #00cfcd;
+                "
+              >
+                Tracked for
+              </p>
+              <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">
+                9<span style="font-size: 20px">days</span>
+              </p>
+              <p class="text-[18px] font-normal leading-[23px] text-[#1d1d1d]">since May 27, 2025</p>
+          </div>
+
         </div>
       </div>
+    </div>
 
-      <div class="fresh-card fresh-card-2 fade-in-up">
-        <img
-          src="assets/images/img_vector_green_600.svg"
-          alt="Shelf Life Icon"
-          class="exp-card-vector"
-        />
-        <img
-          src="assets/images/img_vector_green_600_6x6.svg"
-          alt="Check Icon"
-          style="
-            /* position: absolute; */
-            top: 28px;
-            left: 22px;
-            width: 6px;
-            height: 6px;
-          "
-        />
-        <p
-          style="
-            /* position: absolute; */
-            top: 15px;
-            left: 46px;
-            font-size: 22px;
-            color: #36b535;
-          "
-        >
-          Shelf life
-        </p>
-        <p class="exp-card-days">2<span style="font-size: 20px">days</span></p>
-      </div>
-
-      <div class="fresh-card fresh-card-3 fade-in-up">
-        <img
-          src="assets/images/img_vector_cyan_500.svg"
-          alt="Tracked Icon"
-          class="exp-card-vector"
-        />
-        <p
-          style="
-            /* position: absolute; */
-            top: 16px;
-            left: 49px;
-            font-size: 22px;
-            color: #00cfcd;
-          "
-        >
-          Tracked for
-        </p>
-        <p class="exp-card-days">1<span style="font-size: 20px">day</span></p>
-        <p class="exp-card-date">since Jun 4, 2025</p>
-      </div>
-
-      <!-- Tracking Section -->
-      <h2 class="section-heading heading-4 fade-in-up">
-        How long has it<br />been open?
-      </h2>
-      <p class="section-subheading subheading-4 fade-in-up">
-        Open or stored for too long? Kiff will track the<br />time since you
-        opened, bought, or cooked your<br />food.
-      </p>
-
-      <div class="tracking-card tracking-card-1 fade-in-up">
-        <img src="assets/images/img__5.png" alt="Eggs Icon" class="card-icon" />
-        <h3 class="exp-card-title">Eggs</h3>
-        <p class="text-[14px] leading-[23px] font-normal">
-          Fresh for 7 more<br />days
-        </p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #d9dfed">x</span>
-          <span class="card-number-text" style="color: #d9dfed">6</span>
-        </div>
-      </div>
-
-      <div class="tracking-card tracking-card-2 fade-in-up">
-        <img
-          src="assets/images/img_vector_cyan_500.svg"
-          alt="Tracked Icon"
-          class="exp-card-vector"
-        />
-        <p
-          style="
-            /* position: absolute; */
-            top: 16px;
-            left: 49px;
-            font-size: 22px;
-            color: #00cfcd;
-          "
-        >
-          Tracked for
-        </p>
-        <p class="exp-card-days">28<span style="font-size: 20px">days</span></p>
-        <p class="exp-card-date">since May 8, 2025</p>
-      </div>
-
-      <div class="tracking-card tracking-card-3 fade-in-up">
-        <img
-          src="assets/images/img__6.png"
-          alt="Matcha Icon"
-          class="card-icon"
-        />
-        <h3 class="exp-card-title">Matcha</h3>
-        <p class="text-[14px] leading-[23px] font-normal">
-          Fresh for 51 more<br />days
-        </p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #a0dcbb">x</span>
-          <span class="card-number-text" style="color: #a0dcbb">2</span>
-        </div>
-      </div>
-
-      <div class="tracking-card tracking-card-4 fade-in-up">
-        <img
-          src="assets/images/img_vector_cyan_500.svg"
-          alt="Tracked Icon"
-          class="exp-card-vector"
-        />
-        <p
-          style="
-            /* position: absolute; */
-            top: 16px;
-            left: 49px;
-            font-size: 22px;
-            color: #00cfcd;
-          "
-        >
-          Tracked for
-        </p>
-        <p class="exp-card-days">9<span style="font-size: 20px">days</span></p>
-        <p class="exp-card-date">since May 27, 2025</p>
-      </div>
-
-      <!-- Alerts Section -->
-      <h2 class="section-heading heading-5 fade-in-up">
-        Alerts, always<br />in time.
-      </h2>
-      <p class="section-subheading subheading-5 fade-in-up">
-        Enable notifications and Kiff will alert you when<br />your food stops
-        being fresh or is about to expire.
-      </p>
-
-      <div class="alert-circle alert-circle-1 fade-in-up">
-        <img
-          src="assets/images/img__102x76.png"
-          alt="Fresh Alert"
-          class="alert-image"
-        />
-        <!-- Curved text elements for "fresh until tomorrow" -->
-      </div>
-
-      <div class="alert-circle alert-circle-2 fade-in-up">
-        <img
-          src="assets/images/img__3.png"
-          alt="Expires Alert"
-          class="alert-image"
-        />
-        <!-- Curved text elements for "expires tomorrow" -->
-      </div>
-
-      <div class="alert-circle alert-circle-3 fade-in-up">
-        <img
-          src="assets/images/img__7.png"
-          alt="Sliced Bread Alert"
-          class="alert-image"
-        />
-        <!-- Curved text elements for "fresh until tomorrow sliced bread" -->
-      </div>
-
-      <!-- Notification Stack -->
-      <div class="notification-bg-2"></div>
-      <div class="notification-bg-1"></div>
-      <div class="notification">
-        <img
-          src="assets/images/img__22x15.png"
-          alt="Notification Icon"
-          class="notification-icon"
-        />
-        <p class="notification-title">Fresh until tomorrow</p>
-        <p class="notification-text">
-          You can still use your sliced bread, but<br />remember, you're running
-          out of time!
-        </p>
-      </div>
-
-      <!-- Download Section -->
-      <div class="download-section">
-        <h2 class="download-heading fade-in-up">Download the App now</h2>
-        <p class="download-subheading fade-in-up">
-          Experience seamless online ordering only on the Fastbite App
-        </p>
-      </div>
-
+    <!-- Alerts Section -->
+    <div class="bg-white flex items-center justify-center px-6 py-20">
+      <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="relative"">
+            <div class="absolute top-0 left-[50px] h-[224px] w-[224px] rounded-full bg-gradient-to-br from-[#dcf1b0] to-[#83d08b] fade-in-up flex justify-center items-center alert-circle fade-in-up">
+              <img
+                src="assets/images/img__102x76.png"
+                alt="Fresh Alert"
+                class="object-contain h-[102px] w-[72px]"
+              />
+              <!-- Curved text elements for "fresh until tomorrow" -->
+            </div>
+        
+            <div class="absolute top-28 left-[150px] h-[224px] w-[224px] rounded-full bg-gradient-to-br from-[#f6f5f2] to-[#d3dbeb] fade-in-up flex justify-center items-center alert-circle fade-in-up">
+              <img
+                src="assets/images/img__3.png"
+                alt="Expires Alert"
+                class="object-contain h-[102px] w-[72px]"
+              />
+              <!-- Curved text elements for "expires tomorrow" -->
+            </div>
+        
+            <div class="absolute top-52 left-[250px] h-[224px] w-[224px] rounded-full bg-gradient-to-br from-[#ffe8bc] to-[#ff9c54] fade-in-up flex justify-center items-center alert-circle fade-in-up">
+              <img
+                src="assets/images/img__7.png"
+                alt="Sliced Bread Alert"
+                class="object-contain h-[102px] w-[72px]"
+              />
+              <!-- Curved text elements for "fresh until tomorrow sliced bread" -->
+            </div>
+              <!-- Notification Stack -->
+    <div class="notification-bg-2"></div>
+    <div class="notification-bg-1"></div>
+    <div class="notification">
       <img
-        src="assets/images/img_kiff_app_dark_mode_screenshot.png"
-        alt="Fast Bite App Dark Mode"
-        class="download-phone"
+        src="assets/images/img__22x15.png"
+        alt="Notification Icon"
+        class="notification-icon"
       />
+      <p class="notification-title">Fresh until tomorrow</p>
+      <p class="notification-text">
+        You can still use your sliced bread, but<br />remember, you're running
+        out of time!
+      </p>
+    </div>
 
-      <!-- Final CTA Section -->
-      <h2 class="final-heading fade-in-up">
-        Stop wasting food and start<br />saving money.
-      </h2>
-      <p class="final-subheading fade-in-up">Pay once, yours forever.</p>
-      <img
-        src="assets/images/img_component_1.svg"
-        alt="QR Code"
-        class="qr-code"
-      />
+          </div>
 
-      <!-- Footer -->
-      <div class="footer">
-        <img
-          src="assets/images/img_fast_bite_white040306_2.png"
-          alt="Fast Bite Logo"
-          class="footer-logo"
-        />
-        <p class="footer-copyright">
-          FastBite.<br />© Copyright 2025. All Rights Reserved.
-        </p>
-
-        <div class="footer-link footer-terms">Terms</div>
-        <div class="footer-link footer-privacy">Privacy</div>
-
-        <div class="footer-link footer-nav-home">Home</div>
-        <div class="footer-link footer-nav-privacy">Privacy</div>
-        <div class="footer-link footer-nav-terms">Terms and conditions</div>
-        <div class="footer-link footer-nav-support">Help and Support</div>
-
-        <div class="footer-social footer-instagram">Instagram</div>
-        <div class="footer-social footer-facebook">Facebook</div>
-        <div class="footer-social footer-twitter">Twitter</div>
-
-        <div class="language-selector">
-          <img
-            src="assets/images/img_component_1_gray_600_01.svg"
-            alt="Language Icon"
-            class="language-icon"
-          />
-          <span class="language-text">ES</span>
+          <!-- text -->
+        <div>
+           <h2 class="fade-in-up text-[60px] font-bold text-[#1d1d1d]">
+             Alerts, always<br />in time.
+           </h2>
+           <p class="fade-in-up text-[20px] font-medium leading-[32px] text-[#36b535]">
+             Enable notifications and Kiff will alert you when<br />your food stops
+             being fresh or is about to expire.
+           </p>
         </div>
+        </div>
+    </div>
+    <!-- Download Section -->
+    <div class="download-section">
+      <h2 class="download-heading fade-in-up">Download the App now</h2>
+      <p class="download-subheading fade-in-up">
+        Experience seamless online ordering only on the Fastbite App
+      </p>
+    </div>
+
+    <img
+      src="assets/images/img_kiff_app_dark_mode_screenshot.png"
+      alt="Fast Bite App Dark Mode"
+      class="download-phone"
+    />
+
+    <!-- Final CTA Section -->
+    <h2 class="final-heading fade-in-up">
+      Stop wasting food and start<br />saving money.
+    </h2>
+    <p class="final-subheading fade-in-up">Pay once, yours forever.</p>
+    <img
+      src="assets/images/img_component_1.svg"
+      alt="QR Code"
+      class="qr-code"
+    />
+
+    <!-- Footer -->
+    <div class="footer">
+      <img
+        src="assets/images/img_fast_bite_white040306_2.png"
+        alt="Fast Bite Logo"
+        class="footer-logo"
+      />
+      <p class="footer-copyright">
+        FastBite.<br />© Copyright 2025. All Rights Reserved.
+      </p>
+
+      <div class="footer-link footer-terms">Terms</div>
+      <div class="footer-link footer-privacy">Privacy</div>
+
+      <div class="footer-link footer-nav-home">Home</div>
+      <div class="footer-link footer-nav-privacy">Privacy</div>
+      <div class="footer-link footer-nav-terms">Terms and conditions</div>
+      <div class="footer-link footer-nav-support">Help and Support</div>
+
+      <div class="footer-social footer-instagram">Instagram</div>
+      <div class="footer-social footer-facebook">Facebook</div>
+      <div class="footer-social footer-twitter">Twitter</div>
+
+      <div class="language-selector">
+        <img
+          src="assets/images/img_component_1_gray_600_01.svg"
+          alt="Language Icon"
+          class="language-icon"
+        />
+        <span class="language-text">ES</span>
       </div>
     </div>
 
