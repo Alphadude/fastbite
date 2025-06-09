@@ -1001,156 +1001,519 @@ body {
   animation: pulse 2s infinite;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
   .container {
-    width: 100%;
     height: auto;
+    position: relative;
   }
 
   .hero-section {
-    width: 100%;
     height: auto;
-    padding: 20px;
-  }
-
-  .hero-title,
-  .hero-subtitle {
+    padding: 100px 20px 80px;
     position: relative;
-    width: 100%;
-    font-size: 60px;
-    line-height: 70px;
-    text-align: center;
-    margin: 10px 0;
   }
 
-  .hero-phone-left,
+  .hero-title, .hero-subtitle {
+    position: static;
+    width: 100%;
+    font-size: 80px;
+    line-height: 90px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .hero-phone-left {
+    left: 80px;
+    width: 250px;
+    height: 320px;
+  }
+
   .hero-phone-right {
-    position: relative;
-    width: 200px;
-    height: 250px;
-    margin: 20px auto;
-    display: block;
+    left: 650px;
+    width: 250px;
+    height: 320px;
   }
 
-  .navigation {
+  .hero-description {
+    position: static;
     width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-
-  .feature-card,
-  .expiration-card,
-  .fresh-card,
-  .tracking-card {
-    position: relative;
-    width: 90%;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .section-heading {
-    position: relative;
-    width: 90%;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 32px;
     text-align: center;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  /* Adjust positioning for smaller screens */
+  .heading-1 { left: 550px; width: 400px; }
+  .subheading-1 { left: 550px; width: 400px; }
+  .heading-2 { left: 120px; width: 320px; }
+  .subheading-2 { left: 120px; width: 400px; }
+
+  .card-1 { left: 120px; }
+  .card-2 { left: 350px; }
+  .card-3 { left: 120px; }
+  .card-4 { left: 350px; }
+
+  .exp-card-1 { left: 600px; }
+  .exp-card-2 { left: 700px; }
+  .exp-card-3 { left: 800px; }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .container {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Hide hero phones to prevent obstruction */
+  .hero-phone-left, .hero-phone-right {
+    display: none;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  /* Hero Section - Simplified */
+  .hero-section {
+    height: auto;
+    padding: 120px 20px 80px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero-title, .hero-subtitle {
+    position: static;
+    font-size: 50px;
+    line-height: 60px;
+    width: 100%;
     margin: 20px auto;
+    text-align: center;
+  }
+
+  .hero-description {
+    position: static;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  /* Convert all sections to flow layout */
+  .section-heading {
+    position: static !important;
+    width: 100% !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
+    text-align: center !important;
+    margin: 60px auto 30px !important;
+    padding: 0 20px !important;
   }
 
   .section-subheading {
-    position: relative;
-    width: 90%;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    margin: 15px auto;
+    position: static !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    margin: 20px auto 50px !important;
+    padding: 0 20px !important;
   }
 
+  /* Feature Cards Section */
+  .feature-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+  }
+
+  .feature-card {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  .card-1, .card-2, .card-3, .card-4 {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  /* Expiration Cards */
+  .expiration-card {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  .exp-card-1, .exp-card-2, .exp-card-3 {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  /* Fresh Cards */
+  .fresh-card {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  .fresh-card-1, .fresh-card-2, .fresh-card-3 {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  /* Tracking Cards */
+  .tracking-card {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  .tracking-card-1, .tracking-card-2, .tracking-card-3, .tracking-card-4 {
+    position: static !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  /* Alert Circles */
   .alert-circle {
-    position: relative;
+    position: static !important;
+    margin: 30px auto !important;
+    display: block !important;
     width: 180px;
     height: 180px;
-    margin: 20px auto;
-    display: block;
   }
 
+  .alert-circle-1, .alert-circle-2, .alert-circle-3 {
+    position: static !important;
+    margin: 30px auto !important;
+    display: block !important;
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Notification */
+  .notification {
+    position: static !important;
+    margin: 30px auto !important;
+    width: 300px;
+    z-index: 3;
+  }
+
+  .notification-bg-1, .notification-bg-2 {
+    display: none; /* Hide background layers to prevent confusion */
+  }
+
+  /* Download Section */
   .download-section {
-    width: 100%;
-    height: auto;
-    padding: 40px 20px;
+    position: static !important;
+    height: auto !important;
+    padding: 80px 20px !important;
+    text-align: center;
+    margin-top: 50px;
   }
 
   .download-heading {
-    position: relative;
-    width: 100%;
-    font-size: 40px;
-    line-height: 45px;
-    text-align: center;
-    margin: 20px 0;
+    position: static !important;
+    width: 100% !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
+    text-align: center !important;
+    margin: 30px auto !important;
   }
 
   .download-subheading {
-    position: relative;
-    width: 100%;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    margin: 15px 0;
+    position: static !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    margin: 20px auto 40px !important;
   }
 
   .download-phone {
-    position: relative;
-    width: 250px;
-    height: 500px;
-    margin: 30px auto;
-    display: block;
+    position: static !important;
+    width: 280px !important;
+    height: 560px !important;
+    margin: 40px auto !important;
+    display: block !important;
   }
 
+  .app-stores {
+    position: static !important;
+    justify-content: center !important;
+    margin: 40px auto !important;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Final CTA */
+  .final-heading {
+    position: static !important;
+    width: 100% !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
+    text-align: center !important;
+    margin: 80px auto 30px !important;
+    padding: 0 20px !important;
+  }
+
+  .final-subheading {
+    position: static !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 20px auto !important;
+  }
+
+  .qr-code {
+    position: static !important;
+    margin: 40px auto 80px !important;
+    display: block !important;
+  }
+
+  /* Footer */
   .footer {
-    width: 100%;
-    height: auto;
-    padding: 30px 20px;
+    position: static !important;
+    height: auto !important;
+    padding: 50px 20px !important;
+    margin-top: 0 !important;
   }
 
-  .footer-logo,
-  .footer-copyright,
-  .footer-link,
-  .footer-social {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
+  .footer-logo {
+    position: static !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  .footer-copyright {
+    position: static !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 20px auto !important;
+  }
+
+  /* Footer Navigation */
+  .footer-nav-home, .footer-nav-privacy, .footer-nav-terms, .footer-nav-support {
+    position: static !important;
+    display: inline-block !important;
+    margin: 10px 15px !important;
+    text-align: center !important;
+    width: auto !important;
+  }
+
+  .footer-terms, .footer-privacy {
+    position: static !important;
+    display: inline-block !important;
+    margin: 10px 15px !important;
+    text-align: center !important;
+    width: auto !important;
+  }
+
+  /* Footer Social */
+  .footer-instagram, .footer-facebook, .footer-twitter {
+    position: static !important;
+    display: inline-block !important;
+    margin: 10px 15px !important;
+    text-align: center !important;
+    width: auto !important;
+  }
+
+  .language-selector {
+    position: static !important;
+    margin: 30px auto !important;
+    display: block !important;
+    width: fit-content !important;
+  }
+
+  /* Ensure proper spacing between sections */
+  .heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
+    margin-top: 80px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .subheading-1, .subheading-2, .subheading-3, .subheading-4, .subheading-5 {
+    margin-bottom: 50px !important;
   }
 }
 
+/* Mobile Landscape (640px and below) */
+@media (max-width: 640px) {
+  .hero-title, .hero-subtitle {
+    font-size: 40px !important;
+    line-height: 48px !important;
+  }
+
+  .section-heading, .download-heading, .final-heading {
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+
+  .feature-card, .expiration-card, .fresh-card, .tracking-card {
+    width: 90% !important;
+    max-width: 280px !important;
+  }
+
+  .alert-circle, .alert-circle-1, .alert-circle-2, .alert-circle-3 {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  .download-phone {
+    width: 250px !important;
+    height: 500px !important;
+  }
+
+  .notification {
+    width: 280px !important;
+  }
+}
+
+/* Mobile Portrait (480px and below) */
 @media (max-width: 480px) {
-  .hero-title,
-  .hero-subtitle {
-    font-size: 40px;
-    line-height: 50px;
+  /* .hero-section {
+    padding: 100px 15px 60px !important;
   }
 
-  .section-heading {
-    font-size: 30px;
-    line-height: 35px;
+  .hero-title, .hero-subtitle {
+    font-size: 32px !important;
+    line-height: 38px !important;
   }
 
-  .download-heading,
-  .final-heading {
-    font-size: 30px;
-    line-height: 35px;
+  .hero-description {
+    font-size: 16px !important;
+    line-height: 22px !important;
   }
 
-  .feature-card,
-  .expiration-card,
-  .fresh-card,
-  .tracking-card {
-    width: 95%;
+  .section-heading, .download-heading, .final-heading {
+    font-size: 26px !important;
+    line-height: 32px !important;
+    padding: 0 15px !important;
   }
 
-  .alert-circle {
-    width: 150px;
-    height: 150px;
+  .section-subheading, .download-subheading, .final-subheading {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    padding: 0 15px !important;
+  }
+
+  .feature-card, .expiration-card, .fresh-card, .tracking-card {
+    width: 95% !important;
+    max-width: 300px !important;
+  } */
+
+  /* .alert-circle {
+    position: relative !important;
+  } */
+
+  /* .alert-image {
+    width: 50px !important;
+    height: 70px !important;
+    bottom: 25px !important;
+    left: 45px !important;
+  }
+
+  .alert-text {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  .notification {
+    width: 260px !important;
+  }
+
+  .nav-container {
+    padding: 0 15px !important;
+  }
+
+  .logo {
+    font-size: 22px !important;
+  }
+
+  .download-btn {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .store-button {
+    width: 200px !important;
+    justify-content: center !important;
+  } */
+
+  .final-heading, .download-heading, .download-subheading {
+    height: fit-content !important;
+  }
+
+  .language-selector {
+    width: 60px !important;
+    height: 30px !important;
+    font-size: 12px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .footer-link, .footer-social {
+    display: block !important;
+    text-align: start !important;
+  }
+}
+
+/* Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .hero-title, .hero-subtitle {
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+
+  .section-heading, .download-heading, .final-heading {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
+
+  .feature-card, .expiration-card, .fresh-card, .tracking-card {
+    width: 100% !important;
+    margin: 15px auto !important;
+  }
+
+  .alert-circle, .alert-circle-1, .alert-circle-2, .alert-circle-3 {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .download-phone {
+    width: 200px !important;
+    height: 400px !important;
+  }
+
+  .notification {
+    width: 240px !important;
+  }
+
+  .qr-code {
+    width: 100px !important;
+    height: 180px !important;
+  }
+
+  .hero-section {
+    padding: 80px 10px 50px !important;
+  }
+
+  .download-section {
+    padding: 60px 10px !important;
   }
 }
