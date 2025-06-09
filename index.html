@@ -10,165 +10,254 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="new.css" />
   </head>
   <body>
-    <div class="">
+    <div class="font-sans">
       <!-- Hero Section -->
-      <div class="">
+      <div class="bg-[#2d6a4f] relative h-screen">
         <!-- Navigation -->
-        <nav class="flex bg-[#2D6A4F] justify-between w-full">
-          <div class="">
-            <!-- <a href="#" class="logo">FastBite</a> -->
-            <img
-              src="/assets/images/img_fast_bite_white040306_2.png"
-              alt="FastBite Logo"
-              class="logo"
-              style="width: 200px"
-            />
-            <div class="flex ">
-              <a href="#" class="nav-link">About</a>
-              <a href="#" class="nav-link">Awareness</a>
-              <a href="#" class="nav-link">Support</a>
-              <a href="#" class="bg-black text-white px-5 py-2.5 rounded-full">Download</a>
-            </div>
-            <div class="mobile-menu-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+        <div class="flex justify-between items-center h-20 px-10">
+          <img
+            src="assets/images/img_fast_bite_white040306_2.png"
+            alt="Fast Bite Logo"
+            class="h-6"
+          />
+          <div class="flex gap-7 items-center">
+            <span class="text-white hover:cursor-pointer hover:text-green-300"
+              >About</span
+            >
+            <span class="text-white hover:cursor-pointer hover:text-green-300"
+              >Awareness</span
+            >
+            <span class="text-white hover:cursor-pointer hover:text-green-300"
+              >Support</span
+            >
+
+            <button
+              class="transition duration-300 transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none text-white bg-black rounded-full px-5 py-2.5 hover:cursor-pointer"
+            >
+              Download
+            </button>
           </div>
-        </nav>
+        </div>
 
         <!-- Hero Content -->
-        <h1 class="hero-title fade-in-up">FAST</h1>
-        <h1 class="hero-subtitle fade-in-up">BITE</h1>
-        <img
-          src="assets/images/img_kiff_app_screenshot.png"
-          alt="Fast Bite App Screenshot"
-          class="hero-phone-left pulse"
-        />
-        <img
-          src="assets/images/img_kiff_app_screenshot_400x312.png"
-          alt="Fast Bite App Screenshot"
-          class="hero-phone-right pulse"
-        />
-        <p class="hero-description fade-in-up">
-          Discover and order the best food delivery from thousands of local
-          restaurants. From craving to comfort in minutes.
-        </p>
+        <div
+          class="flex flex-col items-center justify-between h-[500px] space-y-20 relative pt-14"
+        >
+          <h1
+            class="fade-in-up uppercase text-9xl text-white text-center font-bold"
+          >
+            Fast <span class="ml-10 block">bite</span>
+          </h1>
+          <img
+            src="assets/images/img_kiff_app_screenshot.png"
+            alt="Fast Bite App Screenshot"
+            class="pulse absolute -top-16 left-14 h-[400px] w-[400px] object-contain"
+          />
+          <img
+            src="assets/images/img_kiff_app_screenshot_400x312.png"
+            alt="Fast Bite App Screenshot"
+            class="pulse absolute -top-16 right-14 h-[400px] w-[400px] object-contain"
+          />
+          <div class="flex justify-center items-center w-full mt-[200px]">
+            <p class="fade-in-up text-white text-2xl text-center">
+              Discover and order the best food delivery from thousands of local
+              <br />
+              restaurants. From craving to comfort in minutes.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- Feature Cards Section -->
-      <div class="feature-card card-1 fade-in-up">
-        <img
-          src="assets/images/img_.png"
-          alt="Discover Icon"
-          class="card-icon"
-        />
-        <h3 class="card-title">Discover & Choose</h3>
-        <p class="card-subtitle">From awesome Vendors</p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #a0dcbb">x</span>
-          <span class="card-number-text" style="color: #a0dcbb">1</span>
+      <div class="bg-white min-h-screen flex items-center justify-center p-6">
+        <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Left Side: Steps -->
+          <div class="grid grid-cols-2 gap-y-6">
+            <!-- Step 1 -->
+            <div
+              class="relative bg-gradient-to-br from-green-100 to-teal-300 p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            >
+              <div
+                class="absolute top-5 right-5 bg-white rounded-full p-4 shadow-lg font-bold text-green-300"
+              >
+                x 1
+              </div>
+              <div class="text-4xl mb-2">
+                <img
+                  src="/assets/images/img_.png"
+                  alt="Vegetable"
+                  class="h-10 object-contain"
+                />
+              </div>
+              <h3 class="text-lg font-semibold">Discover & Choose</h3>
+              <p class="text-sm text-gray-700 mt-1">From awesome Vendors</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+              class="relative bg-gradient-to-br from-yellow-100 to-yellow-300 p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            >
+              <div
+                class="absolute top-5 right-5 bg-white rounded-full p-4 shadow-lg font-bold text-yellow-300"
+              >
+                x 2
+              </div>
+              <div class="text-4xl mb-2">
+                <img
+                  src="/assets/images/img__67x49.png"
+                  alt="Vegetable"
+                  class="h-10 object-contain"
+                />
+              </div>
+              <h3 class="text-lg font-semibold">Place Your Order</h3>
+              <p class="text-sm text-gray-700 mt-1">With a few clicks</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+              class="relative bg-gradient-to-br from-red-100 to-pink-300 p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            >
+              <div
+                class="absolute top-5 right-5 bg-white rounded-full p-4 shadow-lg font-bold text-red-300"
+              >
+                x 3
+              </div>
+              <div class="text-4xl mb-2">
+                <img
+                  src="/assets/images/img__1.png"
+                  alt="Vegetable"
+                  class="h-10 object-contain"
+                />
+              </div>
+              <h3 class="text-lg font-semibold">Track in Real-Time</h3>
+              <p class="text-sm text-gray-700 mt-1">Fresh for 8 more days</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div
+              class="relative bg-gradient-to-br from-orange-100 to-orange-300 p-6 h-[200px] w-[250px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card"
+            >
+              <div
+                class="absolute top-5 right-5 bg-white rounded-full p-4 shadow-lg font-bold text-orange-300"
+              >
+                x 4
+              </div>
+              <div class="text-4xl mb-2">
+                <img
+                  src="/assets/images/img__2.png"
+                  alt="Vegetable"
+                  class="h-10 object-contain"
+                />
+              </div>
+              <h3 class="text-lg font-semibold">Enjoy</h3>
+              <p class="text-sm text-gray-700 mt-1">Fresh for 14 more days</p>
+            </div>
+          </div>
+
+          <!-- Right Side: Headline -->
+          <div class="space-y-28">
+            <h2 class="fade-in-up text-[60px] font-bold text-[#1d1d1d]">
+              Your Next Meal is Just 4 Steps Away
+            </h2>
+            <p
+              class="fade-in-up text-[20px] font-medium leading-[32px] text-[#36b535]"
+            >
+              Kiff tracks your food's state and orders it by<br />priority, so
+              you will know what to eat at a glance.
+            </p>
+          </div>
         </div>
       </div>
-
-      <div class="feature-card card-2 fade-in-up">
-        <img
-          src="assets/images/img__67x49.png"
-          alt="Order Icon"
-          class="card-icon"
-        />
-        <h3 class="card-title">Place Your Order</h3>
-        <p class="card-subtitle">With a few clicks</p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #fce082">x</span>
-          <span class="card-number-text" style="color: #fce082">2</span>
-        </div>
-      </div>
-
-      <div class="feature-card card-3 fade-in-up">
-        <img
-          src="assets/images/img__1.png"
-          alt="Track Icon"
-          class="card-icon"
-        />
-        <h3 class="card-title">Track in Real-Time</h3>
-        <p class="card-subtitle">Fresh for 8 more<br />days</p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #ff8f8f">x</span>
-          <span class="card-number-text" style="color: #ff8f8f">3</span>
-        </div>
-      </div>
-
-      <div class="feature-card card-4 fade-in-up">
-        <img
-          src="assets/images/img__2.png"
-          alt="Enjoy Icon"
-          class="card-icon"
-        />
-        <h3 class="card-title">Enjoy</h3>
-        <p class="card-subtitle">Fresh for 14 more<br />days</p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #ffcf80">x</span>
-          <span class="card-number-text" style="color: #ffcf80">4</span>
-        </div>
-      </div>
-
-      <!-- Section Heading 1 -->
-      <h2 class="section-heading heading-1 fade-in-up">
-        Your Next Meal is Just 4 Steps Away
-      </h2>
-      <p class="section-subheading subheading-1 fade-in-up">
-        Kiff tracks your food's state and orders it by<br />priority, so you
-        will know what to eat at a glance.
-      </p>
 
       <!-- Expiration Control Section -->
-      <h2 class="section-heading heading-2 fade-in-up">
-        Expiration<br />dates under<br />control.
-      </h2>
-      <p class="section-subheading subheading-2 fade-in-up">
-        If your food has an expiration date, Kiff will keep<br />it under
-        control so you can eat it before it's too<br />late.
-      </p>
+      <div class="bg-white min-h-screen flex items-center justify-center p-6">
+        <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- text -->
+          <div class="space-y-20">
+            <h2 class="fade-in-up text-[60px] font-bold text-[#1d1d1d]">
+              Expiration<br />dates under<br />control.
+            </h2>
+            <p
+              class="fade-in-up text-[20px] font-medium leading-[32px] text-[#36b535]"
+            >
+              If your food has an expiration date, Kiff will keep<br />it under
+              control so you can eat it before it's too<br />late.
+            </p>
+          </div>
 
-      <!-- Expiration Cards -->
-      <div class="expiration-card exp-card-1 fade-in-up">
-        <img
-          src="assets/images/img__3.png"
-          alt="Milk Icon"
-          class="exp-card-icon"
-        />
-        <h3 class="exp-card-title">Milk</h3>
-        <p class="exp-card-subtitle">Expires in 15<br />days</p>
-        <div class="card-number">
-          <span class="card-number-x" style="color: #b2bfd9">x</span>
-          <span class="card-number-text" style="color: #b2bfd9">1</span>
+          <!-- Expiration Cards -->
+          <div class="relative">
+            <div
+              class="relative bg-gradient-to-br from-purple-100 to-blue-300 p-6 h-[215px] w-[224px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card absolute left-[50px]"
+              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)"
+            >
+              <img
+                src="assets/images/img__3.png"
+                alt="Milk Icon"
+                class="h-[67px] w-[49px] object-contain"
+              />
+              <h3 class="text-[24px] leading-[30px] font-normal">Milk</h3>
+              <p class="text-[14px] leading-[23px] font-normal">
+                Expires in 15<br />days
+              </p>
+              <div class="card-number">
+                <span class="card-number-x" style="color: #b2bfd9">x</span>
+                <span class="card-number-text" style="color: #b2bfd9">1</span>
+              </div>
+            </div>
+
+            <div
+              class="relative bg-white p-6 h-[215px] w-[224px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card absolute -top-[60px] left-[150px]"
+              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)"
+            >
+              <div class="flex gap-2">
+                <img
+                  src="assets/images/img_vector.svg"
+                  alt="Warning Icon"
+                  class="exp-card-vector"
+                />
+                <p
+                  class="text-[22px] font-normal leading-[28px] text-[#ff4900]"
+                >
+                  Expires in
+                </p>
+              </div>
+              <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">
+                7<span style="font-size: 20px">days</span>
+              </p>
+              <p class="font-lg leading-[23px] font-normal text-[#1d1d1d]">
+                Jun 5, 2025
+              </p>
+            </div>
+
+            <div
+              class="relative bg-white p-6 h-[215px] w-[224px] hover:cursor-pointer rounded-xl shadow-md fade-in-up feature-card absolute -top-[120px] left-[250px]"
+              style="box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15)"
+            >
+              <div class="flex gap-2">
+                <img
+                  src="assets/images/img_vector.svg"
+                  alt="Warning Icon"
+                  class="exp-card-vector"
+                />
+                <p
+                  class="text-[22px] font-normal leading-[28px] text-[#ff4900]"
+                >
+                  Expires in
+                </p>
+              </div>
+              <p class="text-[48px] font-normal leading-[59px] text-[#1d1d1d]">
+                Today
+              </p>
+              <p class="font-lg leading-[23px] font-normal text-[#1d1d1d]">
+                Jun 5, 2025
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="expiration-card exp-card-2 fade-in-up">
-        <img
-          src="assets/images/img_vector.svg"
-          alt="Warning Icon"
-          class="exp-card-vector"
-        />
-        <p class="exp-card-warning">Expires in</p>
-        <p class="exp-card-days">7<span style="font-size: 20px">days</span></p>
-        <p class="exp-card-date">Jun 5, 2025</p>
-      </div>
-
-      <div class="expiration-card exp-card-3 fade-in-up">
-        <img
-          src="assets/images/img_vector.svg"
-          alt="Warning Icon"
-          class="exp-card-vector"
-        />
-        <p class="exp-card-warning">Expires</p>
-        <p class="exp-card-days">Today</p>
-        <p class="exp-card-date">Jun 5, 2025</p>
       </div>
 
       <!-- Fresh Food Section -->
@@ -187,7 +276,9 @@
           class="card-icon"
         />
         <h3 class="exp-card-title">Pasta</h3>
-        <p class="exp-card-subtitle">Fresh until<br />tomorrow</p>
+        <p class="text-[14px] leading-[23px] font-normal">
+          Fresh until<br />tomorrow
+        </p>
         <div class="card-number">
           <span class="card-number-x" style="color: #ffcf80">x</span>
           <span class="card-number-text" style="color: #ffcf80">2</span>
@@ -204,7 +295,7 @@
           src="assets/images/img_vector_green_600_6x6.svg"
           alt="Check Icon"
           style="
-            position: absolute;
+            /* position: absolute; */
             top: 28px;
             left: 22px;
             width: 6px;
@@ -213,7 +304,7 @@
         />
         <p
           style="
-            position: absolute;
+            /* position: absolute; */
             top: 15px;
             left: 46px;
             font-size: 22px;
@@ -233,7 +324,7 @@
         />
         <p
           style="
-            position: absolute;
+            /* position: absolute; */
             top: 16px;
             left: 49px;
             font-size: 22px;
@@ -258,7 +349,9 @@
       <div class="tracking-card tracking-card-1 fade-in-up">
         <img src="assets/images/img__5.png" alt="Eggs Icon" class="card-icon" />
         <h3 class="exp-card-title">Eggs</h3>
-        <p class="exp-card-subtitle">Fresh for 7 more<br />days</p>
+        <p class="text-[14px] leading-[23px] font-normal">
+          Fresh for 7 more<br />days
+        </p>
         <div class="card-number">
           <span class="card-number-x" style="color: #d9dfed">x</span>
           <span class="card-number-text" style="color: #d9dfed">6</span>
@@ -273,7 +366,7 @@
         />
         <p
           style="
-            position: absolute;
+            /* position: absolute; */
             top: 16px;
             left: 49px;
             font-size: 22px;
@@ -293,7 +386,9 @@
           class="card-icon"
         />
         <h3 class="exp-card-title">Matcha</h3>
-        <p class="exp-card-subtitle">Fresh for 51 more<br />days</p>
+        <p class="text-[14px] leading-[23px] font-normal">
+          Fresh for 51 more<br />days
+        </p>
         <div class="card-number">
           <span class="card-number-x" style="color: #a0dcbb">x</span>
           <span class="card-number-text" style="color: #a0dcbb">2</span>
@@ -308,7 +403,7 @@
         />
         <p
           style="
-            position: absolute;
+            /* position: absolute; */
             top: 16px;
             left: 49px;
             font-size: 22px;
@@ -379,14 +474,6 @@
         <p class="download-subheading fade-in-up">
           Experience seamless online ordering only on the Fastbite App
         </p>
-        <div class="app-stores">
-          <a href="#" class="store-button"
-            ><i class="fa-brands fa-app-store-ios"></i> App Store</a
-          >
-          <a href="#" class="store-button"
-            ><i class="fa-brands fa-google-play"></i> Google Play</a
-          >
-        </div>
       </div>
 
       <img
@@ -485,7 +572,7 @@
             // Add ripple effect
             const ripple = document.createElement("div");
             ripple.style.cssText = `
-                    position: absolute;
+                    // position: absolute;
                     border-radius: 50%;
                     background: rgba(255, 255, 255, 0.3);
                     transform: scale(0);

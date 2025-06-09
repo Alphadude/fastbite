@@ -97,7 +97,7 @@ body {
   line-height: 45px;
   text-align: center;
   color: #eeeeee;
-} 
+}
 
 /* Navigation */
 .navbar {
@@ -1002,7 +1002,7 @@ body {
 }
 
 /* Tablet Landscape (1024px and below) */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .container {
     height: auto;
     position: relative;
@@ -1043,10 +1043,10 @@ body {
     text-align: center;
     margin: 40px auto;
     padding: 0 20px;
-  }
+  } */
 
-  /* Adjust positioning for smaller screens */
-  .heading-1 { left: 550px; width: 400px; }
+/* Adjust positioning for smaller screens */
+/* .heading-1 { left: 550px; width: 400px; }
   .subheading-1 { left: 550px; width: 400px; }
   .heading-2 { left: 120px; width: 320px; }
   .subheading-2 { left: 120px; width: 400px; }
@@ -1059,7 +1059,7 @@ body {
   .exp-card-1 { left: 600px; }
   .exp-card-2 { left: 700px; }
   .exp-card-3 { left: 800px; }
-}
+} */
 
 /* Tablet Portrait (768px and below) */
 @media (max-width: 768px) {
@@ -1069,7 +1069,8 @@ body {
   }
 
   /* Hide hero phones to prevent obstruction */
-  .hero-phone-left, .hero-phone-right {
+  .hero-phone-left,
+  .hero-phone-right {
     display: none;
   }
 
@@ -1090,7 +1091,8 @@ body {
     position: relative;
   }
 
-  .hero-title, .hero-subtitle {
+  .hero-title,
+  .hero-subtitle {
     position: static;
     font-size: 50px;
     line-height: 60px;
@@ -1144,7 +1146,10 @@ body {
     display: block !important;
   }
 
-  .card-1, .card-2, .card-3, .card-4 {
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
     position: static !important;
     margin: 20px auto !important;
     display: block !important;
@@ -1157,7 +1162,9 @@ body {
     display: block !important;
   }
 
-  .exp-card-1, .exp-card-2, .exp-card-3 {
+  .exp-card-1,
+  .exp-card-2,
+  .exp-card-3 {
     position: static !important;
     margin: 20px auto !important;
     display: block !important;
@@ -1170,7 +1177,9 @@ body {
     display: block !important;
   }
 
-  .fresh-card-1, .fresh-card-2, .fresh-card-3 {
+  .fresh-card-1,
+  .fresh-card-2,
+  .fresh-card-3 {
     position: static !important;
     margin: 20px auto !important;
     display: block !important;
@@ -1183,7 +1192,10 @@ body {
     display: block !important;
   }
 
-  .tracking-card-1, .tracking-card-2, .tracking-card-3, .tracking-card-4 {
+  .tracking-card-1,
+  .tracking-card-2,
+  .tracking-card-3,
+  .tracking-card-4 {
     position: static !important;
     margin: 20px auto !important;
     display: block !important;
@@ -1198,7 +1210,9 @@ body {
     height: 180px;
   }
 
-  .alert-circle-1, .alert-circle-2, .alert-circle-3 {
+  .alert-circle-1,
+  .alert-circle-2,
+  .alert-circle-3 {
     position: static !important;
     margin: 30px auto !important;
     display: block !important;
@@ -1214,7 +1228,8 @@ body {
     z-index: 3;
   }
 
-  .notification-bg-1, .notification-bg-2 {
+  .notification-bg-1,
+  .notification-bg-2 {
     display: none; /* Hide background layers to prevent confusion */
   }
 
@@ -1309,7 +1324,10 @@ body {
   }
 
   /* Footer Navigation */
-  .footer-nav-home, .footer-nav-privacy, .footer-nav-terms, .footer-nav-support {
+  .footer-nav-home,
+  .footer-nav-privacy,
+  .footer-nav-terms,
+  .footer-nav-support {
     position: static !important;
     display: inline-block !important;
     margin: 10px 15px !important;
@@ -1317,7 +1335,8 @@ body {
     width: auto !important;
   }
 
-  .footer-terms, .footer-privacy {
+  .footer-terms,
+  .footer-privacy {
     position: static !important;
     display: inline-block !important;
     margin: 10px 15px !important;
@@ -1326,7 +1345,9 @@ body {
   }
 
   /* Footer Social */
-  .footer-instagram, .footer-facebook, .footer-twitter {
+  .footer-instagram,
+  .footer-facebook,
+  .footer-twitter {
     position: static !important;
     display: inline-block !important;
     margin: 10px 15px !important;
@@ -1342,34 +1363,51 @@ body {
   }
 
   /* Ensure proper spacing between sections */
-  .heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
+  .heading-1,
+  .heading-2,
+  .heading-3,
+  .heading-4,
+  .heading-5 {
     margin-top: 80px !important;
     margin-bottom: 30px !important;
   }
 
-  .subheading-1, .subheading-2, .subheading-3, .subheading-4, .subheading-5 {
+  .subheading-1,
+  .subheading-2,
+  .subheading-3,
+  .subheading-4,
+  .subheading-5 {
     margin-bottom: 50px !important;
   }
 }
 
 /* Mobile Landscape (640px and below) */
 @media (max-width: 640px) {
-  .hero-title, .hero-subtitle {
+  .hero-title,
+  .hero-subtitle {
     font-size: 40px !important;
     line-height: 48px !important;
   }
 
-  .section-heading, .download-heading, .final-heading {
+  .section-heading,
+  .download-heading,
+  .final-heading {
     font-size: 30px !important;
     line-height: 36px !important;
   }
 
-  .feature-card, .expiration-card, .fresh-card, .tracking-card {
+  .feature-card,
+  .expiration-card,
+  .fresh-card,
+  .tracking-card {
     width: 90% !important;
     max-width: 280px !important;
   }
 
-  .alert-circle, .alert-circle-1, .alert-circle-2, .alert-circle-3 {
+  .alert-circle,
+  .alert-circle-1,
+  .alert-circle-2,
+  .alert-circle-3 {
     width: 160px !important;
     height: 160px !important;
   }
@@ -1455,7 +1493,9 @@ body {
     justify-content: center !important;
   } */
 
-  .final-heading, .download-heading, .download-subheading {
+  .final-heading,
+  .download-heading,
+  .download-subheading {
     height: fit-content !important;
   }
 
@@ -1467,7 +1507,8 @@ body {
     justify-content: center !important;
   }
 
-  .footer-link, .footer-social {
+  .footer-link,
+  .footer-social {
     display: block !important;
     text-align: start !important;
   }
@@ -1475,22 +1516,31 @@ body {
 
 /* Small Mobile (360px and below) */
 @media (max-width: 360px) {
-  .hero-title, .hero-subtitle {
+  .hero-title,
+  .hero-subtitle {
     font-size: 28px !important;
     line-height: 34px !important;
   }
 
-  .section-heading, .download-heading, .final-heading {
+  .section-heading,
+  .download-heading,
+  .final-heading {
     font-size: 22px !important;
     line-height: 28px !important;
   }
 
-  .feature-card, .expiration-card, .fresh-card, .tracking-card {
+  .feature-card,
+  .expiration-card,
+  .fresh-card,
+  .tracking-card {
     width: 100% !important;
     margin: 15px auto !important;
   }
 
-  .alert-circle, .alert-circle-1, .alert-circle-2, .alert-circle-3 {
+  .alert-circle,
+  .alert-circle-1,
+  .alert-circle-2,
+  .alert-circle-3 {
     width: 120px !important;
     height: 120px !important;
   }
