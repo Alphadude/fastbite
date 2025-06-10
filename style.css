@@ -634,7 +634,7 @@ body {
   z-index: 3;
 }
 
-.notification-bg-1 {
+.notification-bg-1{
   position: absolute;
   top: 3624px;
   left: 205px;
@@ -1228,10 +1228,9 @@ body {
     z-index: 3;
   }
 
-  .notification-bg-1,
-  .notification-bg-2 {
-    display: none; /* Hide background layers to prevent confusion */
-  }
+  /* .notification-bg-1,
+  .notification-bg-2
+  } */
 
   /* Download Section */
   .download-section {
