@@ -168,11 +168,6 @@ body {
 
 /* Download Section */
 .download-heading {
-  position: absolute;
-  top: 162px;
-  left: 188px;
-  width: 472px;
-  height: 128px;
   font-size: 60px;
   font-family: Inter;
   font-weight: 700;
@@ -181,11 +176,6 @@ body {
 }
 
 .download-subheading {
-  position: absolute;
-  top: 314px;
-  left: 188px;
-  width: 471px;
-  height: 64px;
   font-size: 20px;
   font-family: Inter;
   font-weight: 500;
@@ -205,9 +195,6 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
-  position: absolute;
-  bottom: 90px;
-  left: 250px;
 }
 
 .store-button {
